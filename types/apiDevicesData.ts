@@ -1,4 +1,3 @@
-
 export type ApiDevcicesData = {
   devices: {
     id: string;
@@ -17,7 +16,7 @@ export type ApiDevcicesData = {
     shortnames: string[];
     images: {
       default: string;
-    }
+    };
   }[];
   version: string;
-}
+};

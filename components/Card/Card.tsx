@@ -3,11 +3,10 @@ export type CardData = {
   title: string;
   tags?: string;
   label?: string;
-}
+};
 export type CardProps = CardData & {
-  
   onClick: () => void;
-}
+};
 const Card = ({ image, title, tags, label, onClick }: CardProps) => {
   return (
     <div
@@ -17,21 +16,27 @@ const Card = ({ image, title, tags, label, onClick }: CardProps) => {
       onClick={onClick}
       tabIndex={0}
       role="button"
-      onKeyDown={(e) => { if (e.key === 'Enter') onClick(); }}
+      onKeyDown={(e) => {
+        if (e.key === "Enter") onClick();
+      }}
       aria-label={title}
     >
-      {label &&
+      {label && (
         <span className="absolute top-1 right-1 text-blue-500 bg-white text-xs px-1 py-0.5 rounded-sm">
           {label}
         </span>
-      }
+      )}
 
       <div className="w-full h-3/5 bg-neutral-01 group-hover:bg-neutral-02 flex justify-center items-center *:h-full">
         {image}
       </div>
 
       <div className="p-2 text-sm text-medium">{title}</div>
-      {tags && <div className="absolute bottom-2 text-xs text-light px-2 w-full truncate">{tags}</div>}
+      {tags && (
+        <div className="absolute bottom-2 text-xs text-light px-2 w-full truncate">
+          {tags}
+        </div>
+      )}
     </div>
   );
 };

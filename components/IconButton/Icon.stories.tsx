@@ -1,16 +1,15 @@
-import IconButton from './IconButton';
+import IconButton from "./IconButton";
 
 const meta = {
   component: IconButton,
-  title: 'IconButton',
-  args: {
-  }
-}
+  title: "IconButton",
+  args: {},
+};
 
 export default meta;
 
 export const Basic = {
   args: {
-    icon: 'list'
-  }
+    icon: "list",
+  },
 };

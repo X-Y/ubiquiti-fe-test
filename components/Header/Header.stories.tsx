@@ -1,17 +1,16 @@
-import Header from './Header';
+import Header from "./Header";
 
 const meta = {
   component: Header,
-  title: 'Header',
-  args: {
-  }
-}
+  title: "Header",
+  args: {},
+};
 
 export default meta;
 
 export const Basic = {
   args: {
-    title: 'Devices',
-    user: 'Author/Developer Name'
-  }
+    title: "Devices",
+    user: "Author/Developer Name",
+  },
 };

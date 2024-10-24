@@ -1,10 +1,6 @@
-import * as React from "react"
+import * as React from "react";
 const SvgComponent = (props: React.SVGAttributes<HTMLOrSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    fill="none"
-    {...props}
-  >
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" {...props}>
     <path
       fill="#838691"
       fillRule="evenodd"
@@ -12,5 +8,5 @@ const SvgComponent = (props: React.SVGAttributes<HTMLOrSVGElement>) => (
       clipRule="evenodd"
     />
   </svg>
-)
-export default SvgComponent
+);
+export default SvgComponent;

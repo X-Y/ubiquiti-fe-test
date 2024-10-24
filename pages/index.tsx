@@ -8,7 +8,12 @@ import DeviceListing from "@/containers/DeviceListing";
 import Header from "@/components/Header/Header";
 
 export default function Home() {
-  const { status, data: sourceData, error, isFetching } = useQuery<ApiDevcicesData>({
+  const {
+    status,
+    data: sourceData,
+    error,
+    isFetching,
+  } = useQuery<ApiDevcicesData>({
     queryKey: ["getDevicesData"],
     queryFn: getDevicesData,
     staleTime: 60000,
@@ -20,12 +25,13 @@ export default function Home() {
 
   return (
     <div>
-      <Header title="Devices" user="Xun"/>
+      <Header title="Devices" user="Xun" />
       <div className="max-w-7xl m-auto px-4">
-      {isShowDetails ? 
-        <DetailsView devices={data} deviceIdx={detailsProductIdx} /> :
-        <DeviceListing devices={data} />
-      }
+        {isShowDetails ? (
+          <DetailsView devices={data} deviceIdx={detailsProductIdx} />
+        ) : (
+          <DeviceListing devices={data} />
+        )}
       </div>
     </div>
   );
