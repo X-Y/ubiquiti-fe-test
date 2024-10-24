@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { PropsWithChildren } from "react";
 
 export type LightButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> &

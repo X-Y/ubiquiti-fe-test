@@ -1,3 +1,4 @@
+import { Icon } from "@/types/adaptedData";
 import Details from "./Details";
 
 const meta = {

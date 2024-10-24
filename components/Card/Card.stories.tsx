@@ -1,7 +1,8 @@
 import Image from "../Image/Image";
 import Card from "./Card";
+import type { Meta } from '@storybook/react';
 
-const meta = {
+const meta: Meta<typeof Card> = {
   component: Card,
   title: "Card",
   decorators: [

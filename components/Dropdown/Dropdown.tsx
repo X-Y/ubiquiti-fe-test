@@ -1,5 +1,5 @@
-import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
-import React, { PropsWithChildren, useState } from "react";
+import { Menu, MenuButton, MenuItems } from "@headlessui/react";
+import React, { PropsWithChildren } from "react";
 
 type DropdownProps = PropsWithChildren<{
   buttonText: string;

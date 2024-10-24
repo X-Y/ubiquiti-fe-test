@@ -1,7 +1,8 @@
 import SearchBox from "./SearchBox";
 import { useState } from "react";
+import type { Meta } from '@storybook/react';
 
-const meta = {
+const meta: Meta<typeof SearchBox> = {
   component: SearchBox,
   title: "SearchBox",
   decorators: [

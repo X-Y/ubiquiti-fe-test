@@ -1,9 +1,10 @@
-import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
+import { MenuItem } from "@headlessui/react";
+import type { Meta } from '@storybook/react';
 
 import Dropdown from "./Dropdown";
 import CheckboxGroup from "../CheckboxGroup/CheckboxGroup";
 
-const meta = {
+const meta: Meta<typeof Dropdown> = {
   component: Dropdown,
   title: "Dropdown",
   decorators: [
@@ -71,7 +72,7 @@ export const WithCheckBoxes = {
         <p>Product Line</p>
         <CheckboxGroup
           name="filters"
-          values={["UniFi", "UniFi LTE", "UniFi Protect", "UniFi Access"]}
+          values={{"UniFi":false , "UniFi LTE":false, "UniFi Protect":false, "UniFi Access":false}}
           onChange={(values: string[]) => console.log(values)}
         />
       </div>

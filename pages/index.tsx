@@ -9,10 +9,7 @@ import Header from "@/components/Header/Header";
 
 export default function Home() {
   const {
-    status,
     data: sourceData,
-    error,
-    isFetching,
   } = useQuery<ApiDevcicesData>({
     queryKey: ["getDevicesData"],
     queryFn: getDevicesData,
